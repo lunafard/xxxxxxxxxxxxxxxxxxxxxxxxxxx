@@ -1,4 +1,3 @@
-if getgenv().Demise.General.Intro then
 getgenv().Get =
     setmetatable(
     {},
