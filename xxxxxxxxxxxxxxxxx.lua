@@ -76,7 +76,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         
             ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
             Window.Size = UDim2.new(0, 230, 0, 80)
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
         
@@ -105,7 +105,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         local function DNS_Shadow_Script_EzNerd()
             local script = Instance.new('LocalScript', ambientShadow)
         
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
 
             wait(middledebug.Time)
         
@@ -172,7 +172,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             Uncheck.MouseButton1Click:Connect(Unchecked)
             Check.MouseButton1Click:Connect(Checked)
             
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
 
