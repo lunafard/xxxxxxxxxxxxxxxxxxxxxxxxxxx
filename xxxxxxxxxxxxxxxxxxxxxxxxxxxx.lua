@@ -22,7 +22,7 @@ if not GUI then
     end
     local MAW_NOTIFICATIONUIListLayout = Instance.new("UIListLayout")
     MAW_NOTIFICATION.Name = "MAW_NOTIFICATION"
-    MAW_NOTIFICATION.Parent = game.CoreGui
+    MAW_NOTIFICATION.Parent = CoreGui
     MAW_NOTIFICATION.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     MAW_NOTIFICATION.ResetOnSpawn = false
     
