@@ -1,6 +1,6 @@
 local Nofitication = {}
 
-local GUI = game:GetService("CoreGui"):FindFirstChild("DNS_Notification")
+local GUI = game:GetService("CoreGui"):FindFirstChild("STX_Nofitication")
 function Nofitication:Notify(nofdebug, middledebug, all)
     local SelectedType = string.lower(tostring(middledebug.Type))
     local ambientShadow = Instance.new("ImageLabel")
@@ -71,12 +71,12 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.TextYAlignment = Enum.TextYAlignment.Top
 
     if SelectedType == "default" then
-        local function DNS_Shadow_Script_EzNerd()
+        local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
             ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
             Window.Size = UDim2.new(0, 230, 0, 80)
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
         
@@ -85,7 +85,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             wait(0.2)
             ambientShadow:Destroy()
         end
-        coroutine.wrap(DNS_Shadow_Script_EzNerd)()
+        coroutine.wrap(ORBHB_fake_script)()
     elseif SelectedType == "image" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
         Window.Size = UDim2.new(0, 230, 0, 80)
@@ -102,10 +102,10 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         ImageButton.Image = all.Image
         ImageButton.ImageColor3 = all.ImageColor
 
-        local function DNS_Shadow_Script_EzNerd()
+        local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
 
             wait(middledebug.Time)
         
@@ -114,7 +114,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             wait(0.2)
             ambientShadow:Destroy()
         end
-        coroutine.wrap(DNS_Shadow_Script_EzNerd)()
+        coroutine.wrap(ORBHB_fake_script)()
     elseif SelectedType == "option" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 110), "Out", "Linear", 0.2)
         Window.Size = UDim2.new(0, 230, 0, 100)
@@ -145,7 +145,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Check.Image = "http://www.roblox.com/asset/?id=6031094667"
         Check.ImageColor3 = Color3.fromRGB(83, 230, 50)
 
-        local function DNS_Shadow_Script_EzNerd()
+        local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
             local Stilthere = true
@@ -172,7 +172,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             Uncheck.MouseButton1Click:Connect(Unchecked)
             Check.MouseButton1Click:Connect(Checked)
             
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
 
@@ -184,7 +184,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
                 ambientShadow:Destroy()
             end
         end
-        coroutine.wrap(DNS_Shadow_Script_EzNerd)()
+        coroutine.wrap(ORBHB_fake_script)()
     end
 end
 
