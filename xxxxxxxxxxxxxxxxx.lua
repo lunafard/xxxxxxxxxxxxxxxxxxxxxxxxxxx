@@ -153,7 +153,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
                 pcall(function()
                     all.Callback(false)
                 end)
-                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0)
+                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0.2)
                 
                 wait(0.2)
                 ambientShadow:Destroy()
@@ -163,7 +163,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
                 pcall(function()
                     all.Callback(true)
                 end)
-                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0)
+                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0.2)
                 
                 wait(0.2)
                 ambientShadow:Destroy()
@@ -178,7 +178,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
 
             if Stilthere == true then
         
-                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0)
+                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0.2)
                 
                 wait(0.2)
                 ambientShadow:Destroy()
