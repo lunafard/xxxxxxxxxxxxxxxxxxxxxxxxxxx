@@ -105,7 +105,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(2, 0, 0, 0), "Out", "Linear", middledebug.Time)
 
             wait(middledebug.Time)
         
@@ -172,7 +172,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             Uncheck.MouseButton1Click:Connect(Unchecked)
             Check.MouseButton1Click:Connect(Checked)
             
-            Outline_A:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", middledebug.Time)
+            Outline_A:TweenSize(UDim2.new(2, 0, 0, 0), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
 
